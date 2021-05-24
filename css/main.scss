@@ -29,9 +29,20 @@ a{
 
         width: 605px;
     }
+    &__search>form{
+        display: flex;
+    }
     &__search>form>input[type="search"]{
-        width: 317px;
+        width: 280px;
         height: 38px;
+        border-radius: 0 3px 3px 0;
+        border: 1px solid #e6e6e6;
+        background-color: #ffffff;
+    }
+    &__search>form>button{
+        width: 38px;
+        height: 38px;
+        background: url(../images/search.png) no-repeat center;
         border-radius: 0 3px 3px 0;
         border: 1px solid #e6e6e6;
         background-color: #ffffff;
@@ -43,7 +54,7 @@ a{
 
         width: 198px;
     }
-    &__account>button{
+    &__account{
         width: 130px;
         height: 38px;
         background-color: #f16d7f;
@@ -58,12 +69,17 @@ a{
         letter-spacing: 0.38px;
         line-height: normal;
         border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         }
 }
 
 summary{
     display: block;
 }
+
+
 
 .nav{
     margin: 0 auto;
@@ -99,6 +115,7 @@ summary{
     justify-content: space-between;
     align-items: center;
     background-image: url(../images/man.png);
+    background-position-y: -51px;
     height: 665px;
     position: relative;
     &__text{
