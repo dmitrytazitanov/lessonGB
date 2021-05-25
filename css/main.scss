@@ -125,8 +125,6 @@ summary{
     display: block;
 }
 
-
-
 .nav{
     margin: 0 auto;
     display: flex;
@@ -349,4 +347,71 @@ summary{
 .left580{
     position: absolute;
     left: 580px;
+}
+
+.fetured{
+    >h3{
+        color: #222222;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 54px;
+        text-align: center;
+        letter-spacing: 0.75px;
+    }
+    >p{
+        color: #9f9f9f;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.35px;
+        padding-bottom: 60px;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px 32px;
+        &-text{
+            color: #222222;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+            text-transform: uppercase;
+            padding-top: 19px;
+            >mark{
+                display: block;
+                background-color: #fff;
+                color: #f16d7f;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: normal;
+                text-align: left;
+                text-transform: uppercase;
+                padding-top: 19px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    &__link{
+        padding: 18px 43px 19px 24px;
+        align-items: center;
+        background-color: #f16d7f;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.4px;
+        position: relative;
+        &-center{
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 113px;
+        }
+        >img{
+            position: absolute;
+            top: 25px;
+            left: 171px;        }
+    }
 }
