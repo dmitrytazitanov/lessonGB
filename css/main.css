@@ -166,8 +166,6 @@ summary {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-  padding-top: 19px;
-  padding-bottom: 22px;
   width: 680px;
 }
 
@@ -184,6 +182,110 @@ summary {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+}
+
+.nav__list {
+  position: relative;
+  padding-top: 19px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+}
+
+.nav__list:hover .mega-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  border-radius: 5px;
+  background-color: #ffffff;
+  top: 50px;
+}
+
+.mega-menu::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #e8e8e8;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -8px;
+  left: 15px;
+  position: absolute;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.mega-menu__item {
+  padding: 0 20px 20px 20px;
+}
+
+.mega-menu__heading {
+  width: 235px;
+  color: #232323;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.mega-menu__link {
+  display: block;
+  color: #646464;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  letter-spacing: 0.35px;
+}
+
+.mega-menu__img {
+  position: absolute;
+  top: 196px;
+  right: 15px;
+}
+
+.mega-menu__sale {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  width: 71px;
+  position: absolute;
+  top: 61px;
+  right: -2px;
+  z-index: 10;
+}
+
+.position-right {
+  position: absolute;
+  top: 50px;
+  right: -9px;
+}
+
+.position-right::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #e8e8e8;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -8px;
+  left: 771px;
+  position: absolute;
+  background-color: #fff;
 }
 
 .fashion {
