@@ -12,7 +12,15 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+a.fetured__link:hover{
+    background-color: #e3e3e9;
+    color: #f16d7f;
+}
+a.cart__down-chek:hover{
+    background-color: #e3e3e9;
+    color: #f16d7f;
+}
+a.cart__down-go:hover{
     background-color: #e3e3e9;
     color: #f16d7f;
 }
@@ -25,6 +33,26 @@ li{
     width: 1140px;
     margin: 0 auto;
 
+}
+
+.logo{
+    color: #222222;
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.68px;
+    display: flex;
+    align-items: center;
+    >img{
+        margin-right: 13px;
+    }
+    >mark{
+        color: #f16d7f;
+        font-weight: 400;
+        letter-spacing: 0.68px;
+        background-color: #fff;
+    }
 }
 
 .header{
@@ -424,6 +452,10 @@ summary{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 40px 32px;
+        &-items{
+            position: relative;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+        }
         &-text{
             color: #222222;
             font-size: 13px;
@@ -446,6 +478,19 @@ summary{
                 padding-bottom: 20px;
             }
         }
+        &-add{
+            display: none;
+            border: 1px solid #ffffff;
+            align-items: center;
+            padding: 10px;
+            justify-content: center;
+            &-text{
+                color: #ffffff;
+                font-size: 13px;
+                font-weight: 700;
+                margin-left: 10px;
+            }
+        }
     }
     &__link{
         padding: 18px 43px 19px 24px;
@@ -466,8 +511,28 @@ summary{
         >img{
             position: absolute;
             top: 25px;
-            left: 171px;        }
+            left: 171px;       
+        }
     }
+}
+
+.add__box{
+    position: absolute;
+    top: 98px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.fetured__grid-items:hover .fetured__grid-img{
+    filter: brightness(50%);
+}
+
+.fetured__grid-items:hover .fetured__grid-add{
+    display: flex;
+}
+.fetured__grid-add:hover{
+    box-shadow: 0 0 10px #fff;
 }
 
 .banner{
@@ -703,12 +768,12 @@ summary{
     }
 }
 
-i{
+.footer__rights-social>a>i{
     color: #b2b2b2;
 }
 
 .footer__rights-social>a:hover i{
-    color: #f7f7f8;
+    color: #ffffff;
 }
 
 .footer__rights-social>a:hover{

@@ -13,7 +13,17 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a.fetured__link:hover {
+  background-color: #e3e3e9;
+  color: #f16d7f;
+}
+
+a.cart__down-chek:hover {
+  background-color: #e3e3e9;
+  color: #f16d7f;
+}
+
+a.cart__down-go:hover {
   background-color: #e3e3e9;
   color: #f16d7f;
 }
@@ -25,6 +35,32 @@ li {
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.logo {
+  color: #222222;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo > img {
+  margin-right: 13px;
+}
+
+.logo > mark {
+  color: #f16d7f;
+  font-weight: 400;
+  letter-spacing: 0.68px;
+  background-color: #fff;
 }
 
 .header {
@@ -496,6 +532,12 @@ summary {
   grid-gap: 40px 32px;
 }
 
+.fetured__grid-items {
+  position: relative;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
 .fetured__grid-text {
   color: #222222;
   font-size: 13px;
@@ -518,6 +560,25 @@ summary {
   text-transform: uppercase;
   padding-top: 19px;
   padding-bottom: 20px;
+}
+
+.fetured__grid-add {
+  display: none;
+  border: 1px solid #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fetured__grid-add-text {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 10px;
 }
 
 .fetured__link {
@@ -549,6 +610,34 @@ summary {
   position: absolute;
   top: 25px;
   left: 171px;
+}
+
+.add__box {
+  position: absolute;
+  top: 98px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.fetured__grid-items:hover .fetured__grid-img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.fetured__grid-items:hover .fetured__grid-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fetured__grid-add:hover {
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 10px #fff;
 }
 
 .banner {
@@ -831,12 +920,12 @@ summary {
   padding-top: 5px;
 }
 
-i {
+.footer__rights-social > a > i {
   color: #b2b2b2;
 }
 
 .footer__rights-social > a:hover i {
-  color: #f7f7f8;
+  color: #ffffff;
 }
 
 .footer__rights-social > a:hover {
