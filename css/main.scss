@@ -1,13 +1,13 @@
+/* общие стили */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Lato', sans-serif;
 }
-p, ol, ul, li{
+p, ol, ul, li, h1, h2, h3, h4, h5, h6, nav{
     margin: 0;
     padding: 0;
 }
@@ -16,6 +16,9 @@ a{
 }
 a:hover{
     color: #f16d7f;
+}
+.logo:hover mark{
+    color: #000;
 }
 a.fetured__link:hover{
     background-color: #e3e3e9;
@@ -29,18 +32,18 @@ a.cart__down-go:hover{
     background-color: #e3e3e9;
     color: #f16d7f;
 }
-
 li{
     list-style-type: none;
 }
 
+/* центрирование контейнера */
 .container{
     width: 1140px;
     margin: 0 auto;
     padding: 0;
 
 }
-
+/* стили  header*/
 .logo{
     color: #222222;
     font-size: 27px;
@@ -60,7 +63,6 @@ li{
         background-color: #fff;
     }
 }
-
 .header{
     padding: 25px 0;
     display: flex;
@@ -127,7 +129,6 @@ li{
         background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
     }
 }
-
 .cart__down{
     position: absolute;
     z-index: 10;
@@ -173,7 +174,6 @@ li{
         
     }
 }
-
 .drop-down{
     &__menu{
         z-index: 10;
@@ -206,13 +206,12 @@ li{
         }
     }
 }
-
-
 summary{
     display: block;
     cursor: pointer;
 }
 
+/* стили для секции nav */
 .nav{
     margin: 0 auto;
     display: flex;
@@ -244,7 +243,6 @@ summary{
         }
     }
 }
-
 .mega-menu{
     display: none;
     position: absolute;
@@ -312,7 +310,6 @@ summary{
 
 
 }
-
 .position-right{
     position: absolute;
     top: 50px;
@@ -331,11 +328,11 @@ summary{
     }
 }
 
+/* стили для секции fashion */
 .fashion{
     background-color: #e8e8e8;
     width: 100%;
 }
-
 .wrap{
     display: flex;
     justify-content: space-between;
@@ -372,7 +369,6 @@ summary{
     }
     
 }
-
 .wrap::before{
     content: "";
     width: 12px;
@@ -380,6 +376,7 @@ summary{
     background-color: #f16d7f;
 }
 
+/* стили для секции offer */
 .offer{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -417,8 +414,6 @@ summary{
         }
     }
 }
-
-
 .top120{
     position: absolute;
     top: 120px;
@@ -436,6 +431,7 @@ summary{
     left: 580px;
 }
 
+/* стили для секции fetured */
 .fetured{
     >h3{
         color: #222222;
@@ -520,7 +516,6 @@ summary{
         }
     }
 }
-
 .add__box{
     position: absolute;
     top: 98px;
@@ -528,11 +523,9 @@ summary{
     justify-content: center;
     width: 100%;
 }
-
 .fetured__grid-items:hover .fetured__grid-img{
     filter: brightness(50%);
 }
-
 .fetured__grid-items:hover .fetured__grid-add{
     display: flex;
 }
@@ -540,6 +533,7 @@ summary{
     box-shadow: 0 0 10px #fff;
 }
 
+/* стили для секции banner */
 .banner{
     display: flex;
     padding-bottom: 100px;
@@ -601,13 +595,13 @@ summary{
     }
 }
 
+/* стили для секции subfooter */
 .subfooter{
     background: url(../images/footer-back.png) no-repeat center;
     background-size: 100% 438px;
     width: 100wh;
     padding-bottom: 100px;
 }
-
 .comment{
     display: flex;
     justify-content: space-between;
@@ -698,18 +692,16 @@ summary{
         
     }
 }
-
 .carousel-indicators [data-bs-target]{
     background-color:#f16d7f;
 }
-
-
 .comment__subscribe-form>button:hover{
     background-color: #e8e8e8;
     color: #f16d7f;
     cursor: pointer;
 }
 
+/* стили для секции footer */
 .footer{
     &__info{
         display: flex;
@@ -782,20 +774,159 @@ summary{
         }
     }
 }
-
 .footer__rights-social>a>i{
     color: #b2b2b2;
 }
-
 .footer__rights-social>a:hover i{
     color: #ffffff;
 }
-
 .footer__rights-social>a:hover{
     background-color: #f16d7f;
 }
-
-
 .footer__info-logo > p::-webkit-scrollbar {
     display: none;
+}
+
+/* стили для секции crumb checkout */
+.crumb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    align-items: center;
+}
+.breadcrumb{
+    margin-bottom: 0;
+    &__heading{
+        color: #f16d7f;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &-item>a{
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #636363;
+        font-weight: 300;
+    }
+}
+.breadcrumb-item.active{
+    color: #f16d7f;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* стили для секции acc checkout */
+.acc{
+    padding-top: 90px;
+}
+.accordion-button{
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.accordion-item{
+    border: 1px solid #e8e8e8;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+.accordion-button:not(.collapsed) {
+    color: #222;
+    background-color: #fff;
+    box-shadow:  0 0 0;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #222; 
+    outline: 0;
+    box-shadow: 0 0 0;
+}
+.accordion-button:hover{
+    color: #f16d7f;
+}
+.accordion-button::after {
+    display: none;
+}
+.accordion-body{
+    display: flex;
+    justify-content: space-between;
+}
+.login__checkout{
+    &-heading{
+        color: #222222;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &-text{
+        color: #b3b2b2;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    &-btn{
+        color: #4a4a4a;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 1px solid #eaeaea;
+        background-color: #ffffff;
+    }
+    &-link{
+        color: #222;
+        margin-left: 32px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+.btn-guest{
+    padding: 19px 53px;
+}
+.btn-login{
+    padding: 19px 81px 19px 51px;
+}
+.red{
+    margin-top: 14px;
+    color: red;
+}
+.login__checkout-password>input{
+    width: 390px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin-bottom: 23px;
+}
+.login__checkout-password>label{
+    margin-bottom: 15px;
+}
+.login__checkout-email>input{
+    width: 390px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin-bottom: 23px;
+}
+.login__checkout-email>label{
+    margin-bottom: 15px;
+}
+.login__checkout-btn:hover{
+    color: #f16d7f;
+}
+.form-check-input:checked {
+    background-color: #000;
+    border-color: #000;
+}
+.form-check-input:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: 0 0 0;
+}
+label>em{
+    color: red;
 }
