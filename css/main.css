@@ -9,6 +9,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -39,6 +43,7 @@ li {
 .container {
   width: 1140px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .logo {
@@ -415,7 +420,7 @@ summary {
 }
 
 .wrap__text {
-  width: 485px;
+  width: 500px;
   color: #222222;
   font-size: 40px;
   font-weight: 400;
@@ -481,13 +486,12 @@ summary {
   background-color: #ffffff;
 }
 
-.offer__text > mark {
+.offer__text > span {
   color: #f16d7f;
   font-size: 30px;
   font-style: normal;
   letter-spacing: 0.75px;
   line-height: normal;
-  background-color: #ffffff;
 }
 
 .top120 {
