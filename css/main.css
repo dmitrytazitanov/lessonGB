@@ -9,8 +9,9 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-p {
+p, ol, ul, li {
   margin: 0;
+  padding: 0;
 }
 
 a {
