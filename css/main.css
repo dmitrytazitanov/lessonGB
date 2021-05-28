@@ -810,8 +810,6 @@ summary {
   letter-spacing: 0.6px;
   line-height: 54px;
   text-transform: uppercase;
-  letter-spacing: 0.35px;
-  line-height: 24px;
 }
 
 .comment__subscribe > p {
@@ -1303,5 +1301,222 @@ label > em {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+}
+
+/* стили для product.html */
+.dropdown {
+  width: 243px;
+}
+
+.dropdown__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 15px;
+}
+
+.dropdown__item-summary {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 37px;
+}
+
+.dropdown__item-link {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dropdown__item-block > ul {
+  padding-left: 17px;
+}
+
+.dropdown__item-list {
+  padding-top: 20px;
+}
+
+details:hover .dropdown__item-summary {
+  color: #f16d7f;
+}
+
+.dropdown__item-summary::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 37px;
+  background-color: #ef5b70;
+  margin-right: 16px;
+}
+
+.product {
+  position: relative;
+}
+
+.product__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-filter {
+  width: 848px;
+}
+
+.top-filter > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-filter__heading {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  padding-top: 10px;
+}
+
+.top-filter__link {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  padding-right: 25px;
+}
+
+.top-filter__checkbox {
+  width: 236px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-filter__checkbox > label {
+  color: #6f6e6e;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.top-filter__checkbox > label > input {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+}
+
+.top-filter__sort {
+  position: absolute;
+  top: 121px;
+  left: 290px;
+}
+
+.top-filter__sort > label, .top-filter__sort > select {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  border: none;
+  background-color: #fff;
+  margin-right: 20px;
+}
+
+.top-filter__sort > select {
+  cursor: pointer;
+}
+
+.top-filter__link:last-of-type {
+  padding-right: 0;
+}
+
+.product__grid {
+  -ms-grid-columns: (263px)[3];
+      grid-template-columns: repeat(3, 263px);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 57px;
+  margin-bottom: 43px;
+}
+
+.product__nav {
+  margin-left: 287px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pagination {
+  width: 261px;
+}
+
+.page-link {
+  color: #c4c4c4;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+  border: none;
+  padding: 0 16px 0 0;
+}
+
+.page-link:hover {
+  color: #ef5b70;
+}
+
+.page-link-active {
+  color: #ef5b70;
+}
+
+.page-link-active:hover {
+  color: #c4c4c4;
+}
+
+.page-link:focus {
+  z-index: 3;
+  color: #ef5b70;
+  background-color: #e9ecef;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.product__nav-link {
+  color: #ef5b70;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 45px;
+  border-radius: 3px;
+  border: 1px solid #ef5b70;
+}
+
+.product__nav-link:hover {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 45px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  background-color: #ef5b70;
 }
 /*# sourceMappingURL=main.css.map */
