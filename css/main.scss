@@ -1225,6 +1225,39 @@ details:hover .dropdown__item-summary{
     border: 1px solid #fff;
     background-color: #ef5b70;
 }
+.black{
+    background-color: #222224;
+    margin-top: 100px;
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 90px;
+        padding-bottom: 114px;
+    }
+    &__item{
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        width: 309px;
+        &-heading{
+            margin-top: 32px;
+            margin-bottom: 17px;
+            color: #fbfbfb;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+        &-text{
+            color: #fbfbfb;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+}
 
 /* cart.html */
 
