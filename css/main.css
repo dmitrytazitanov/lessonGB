@@ -337,7 +337,8 @@ summary {
   display: block;
   width: 15px;
   height: 15px;
-  border: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: -8px;
@@ -405,11 +406,13 @@ summary {
   display: block;
   width: 15px;
   height: 15px;
-  border: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: -8px;
-  left: 771px;
+  right: 25px;
+  left: auto;
   position: absolute;
   background-color: #fff;
 }
