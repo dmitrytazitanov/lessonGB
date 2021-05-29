@@ -255,6 +255,7 @@ summary{
     border-radius: 5px;
     background-color: #ffffff;
     top: 50px;
+    box-shadow: 0 0 10px;
     &::before{
         content: "";
         display: block;
