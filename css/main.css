@@ -588,6 +588,7 @@ summary {
   text-align: left;
   text-transform: uppercase;
   padding-top: 19px;
+  padding-left: 5px;
 }
 
 .fetured__grid-text > mark {
@@ -674,8 +675,6 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 0 0 10px #fff;
-          box-shadow: 0 0 10px #fff;
 }
 
 .fetured__grid-add:hover {
@@ -755,6 +754,49 @@ summary {
   font-size: 14px;
   font-weight: 300;
   text-align: left;
+}
+
+.flex-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7f7f7;
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+#btn-prev, #btn-next {
+  cursor: pointer;
+  font-size: 31px;
+  width: 47px;
+  text-align: center;
+  color: #fff;
+  background-color: #d8d8d8;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* стили для секции subfooter */
@@ -1190,6 +1232,7 @@ label > em {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -21px;
 }
 
 .single__top-img {
