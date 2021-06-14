@@ -220,6 +220,7 @@ li{
 summary{
     display: block;
     cursor: pointer;
+
 }
 
 /* стили для секции nav */
@@ -484,6 +485,7 @@ summary{
             text-align: left;
             text-transform: uppercase;
             padding-top: 19px;
+            padding-left: 5px;
             >mark{
                 display: block;
                 background-color: #fff;
@@ -546,11 +548,12 @@ summary{
 }
 .fetured__grid-items:hover .fetured__grid-add{
     display: flex;
-    box-shadow: 0 0 10px #fff;
 }
 .fetured__grid-add:hover{
     box-shadow: 0 0 10px #fff;
 }
+
+
 
 /* стили для секции banner */
 .banner{
@@ -614,6 +617,42 @@ summary{
     }
 }
 
+
+
+
+
+.flex-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+#btn-prev, #btn-next {
+    cursor: pointer;
+    font-size: 31px;
+    width: 47px;
+    text-align: center;
+    color: #fff;
+    background-color: #d8d8d8;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: flex;
+    justify-content: center;
+}
 /* стили для секции subfooter */
 .subfooter{
     background: url(../images/footer-back.png) no-repeat center;
@@ -958,6 +997,7 @@ label>em{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: -21px;
         &-img{
             margin-bottom: 29px;
         }
@@ -1073,6 +1113,9 @@ label>em{
     text-align: center;
     text-transform: uppercase;
 }
+
+
+
 
 /* стили для product.html */
 .dropdown{
