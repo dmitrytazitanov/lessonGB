@@ -201,32 +201,32 @@ li {
   display: block;
   padding: 19px 74px;
   border-radius: 5px;
-  background-color: #fff;
-  color: #f16d7f;
+  background-color: #f16d7f;
+  color: #fff;
   margin-bottom: 10px;
   margin-top: 30px;
   border: 1px solid #f16d7f;
 }
 
 .cart__down-chek:hover {
-  border: 1px solid #eaeaea;
+  border: 1px solid #f16d7f;
   background-color: #ffffff;
-  color: #4a4a4a;
+  color: #f16d7f;
 }
 
 .cart__down-go {
   display: block;
   padding: 20px 72px 18px 71px;
-  border: 1px solid #eaeaea;
-  background-color: #ffffff;
-  color: #4a4a4a;
+  border: 1px solid #f16d7f;
+  background-color: #f16d7f;
+  color: #fff;
   border-radius: 5px;
 }
 
 .cart__down-go:hover {
-  color: #f16d7f;
-  background-color: #fff;
   border: 1px solid #f16d7f;
+  background-color: #ffffff;
+  color: #f16d7f;
 }
 
 .cart__down-item {
